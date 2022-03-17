@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="idade.css">
+<script src="idade.js"></script>
+
+<body>
+    <div class="container">
+        <form>
+            <div class="base">
+                <div class="enter">
+                    <h4>Calculadora de Idade</h4>
+                </div>
+                <div class="block">
+                    <p class="title">Dia</p>
+                    <input type="text" name="data" id="data" placeholder="dd" required="required" minlength="1"
+                        maxlength="2" />
+                </div>
+                <div class="block">
+                    <p class="title">Mês</p>
+                    <input type="text" name="mes" id="mes" placeholder="mm" required="required" minlength="1"
+                        maxlength="2" />
+                </div>
+                <div class="block">
+                    <p class="title">Ano</p>
+                    <input type="text" name="ano" id="ano" placeholder="aaaa" required="required" minlength="4"
+                        maxlength="4" /><br><br>
+                </div>
+            </div>
+            <div class="base">
+                <div class="enter">
+                    <button onclick="idade(event)">enviar</button>
+                </div>
+            </div>
+            <div class="idd" id="idade"></div>
+        </form>
+    </div>
+</body>
+
+</html>
